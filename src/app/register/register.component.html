@@ -1,0 +1,61 @@
+<div class="card">
+  <div class="card-header bg-success">User Registration</div>
+  <div class="card-body">
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label>email</label>
+          <input type="text" class="form-control" [(ngModel)]="user.email" name="email"  placeholder="Enter Email">
+        </div>
+        <div class="form-group col-md-3">
+          <label>Password</label>
+          <input type="text" class="form-control" [(ngModel)]="user.password" name="password"  placeholder="Enter Name">
+        </div>
+        <div class="form-group col-md-3">
+          <label>Confirm password</label>
+          <input type="password" class="form-control" [(ngModel)]="user.conf_password" name="conf_password"   >
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label>First name</label>
+          <input type="text" class="form-control" [(ngModel)]="user.firstName" name="username"  placeholder="Enter Name">
+        </div>
+        <div class="form-group col-md-3">
+          <label>Last name</label>
+          <input type="text" class="form-control" [(ngModel)]="user.lastName" name="username"  placeholder="Enter Name">
+        </div>
+        <div class="form-group col-md-3">
+          <label>Date Of Birth</label>
+          <input type="date" class="form-control" [(ngModel)]="user.birthdate" name="dateOfBirth"   >
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label>Mobile</label>
+          <input type="text" class="form-control" [(ngModel)]="user.mobile" name="mobile"  placeholder="Enter Your Mobile">
+        </div>
+        <div class="form-group col-md-3">
+          <label>Role</label>
+          <input type="text" class="form-control" [(ngModel)]="user.appUserRole" name="appUserRole"  placeholder="Enter Your Role">
+        </div>
+        <div class="form-group col-md-3">
+          <label>Image</label>
+          <input type="image" class="form-control" [(ngModel)]="user.picture" name="picture"  placeholder="Enter Your picture">
+        </div>
+      </div>
+      <button type="button" (click)="saveUser()" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
